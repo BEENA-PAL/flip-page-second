@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emozi</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        
+        box-sizing: border-box;
+      }
+      body{
+        height: 100vh;
+        text-transform: uppercase;
+
+        background-color: rgb(250,350,652);
+        overflow: hidden;
+        font-family: sarif;
+        background-color: rgb(149, 106, 149);
+        /* background: linear-gradient(90deg,rgb(159, 123, 206),rgb(115, 11, 138)); */
+        color: rgb(241, 247, 202);
+        display: flex;
+        justify-content: center;
+        position: relative;
+       
+      }
+      .outer{
+        height: 300px;
+        width: 300px;
+        perspective: 500px;
+      
+      }
+      .inner{
+        height: 100%;
+        width: 100%;
+        transform-style: preserve-3d;
+        transition: transform 800ms;
+      }
+      .touch, .beena{
+        height: 100%;
+        width: 100%;
+        border-radius: 5px;
+        position: absolute;
+        backface-visibility: hidden;
+      }
+      .touch{
+      background-color: rgb(115, 91, 155);
+        font-size: 1.5rem;
+        text-align: center;
+        transform: rotatey(180deg);
+      }
+      
+      .outer:hover>.inner{
+        cursor: move;
+        transform: rotatey(180deg);
+      }
+      
+      span{
+        color: black;
+      }
+      
+      .beena{
+         box-sizing: border-box;
+        text-align: center;
+         background-color:  rgb(96, 6, 91);
+        flex-direction: column;
+      }
+      .beena>p{
+        position: absolute;
+        top: 50px;
+      }
+      h1{
+        position: absolute;
+        text-transform: lowercase;
+        top: 100px;
+        left: 50px;
+        height: 100px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Sacramento', cursive;
+        color: rgb(68, 7, 68);
+        font-size: 50px;
+
+      }
+      body>div{
+        position: absolute;
+        top: 200px;
+        left: 200px;
+      }
+      .beena>p{
+        position: absolute;
+        left: 5px;
+        font-family: serif;
+        font-size: 5rem;
+      }
+      .touch>p{
+        text-transform: lowercase;
+        font-family: 'Montserrat', sans-serif;
+        font-family: 'Roboto', sans-serif;
+        font-family: 'Sacramento', cursive;
+        font-size: 3.5rem;
+        font-weight: 300;
+        color: rgb(240, 245, 212);
+      }
+      
+      
+  
+
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Roboto:wght@300&family=Sacramento&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <h1>YOU ARE THAT PART OF ME I'LL ALWAYS NEED.</h1>
+    <div class="outer">
+      <div class="inner">
+            <div class="touch">
+              <p >Not to brag, but I think we’re really cute together.</p>
+            </div>
+            <div class="beena">
+              <p>TOUCH ME</p>
+            </div>
+      </div>
+    </div>
+    
+  
+</body>
+</html>
